@@ -8,6 +8,8 @@ services:
       dockerfile: SampleApiDocker/Dockerfile
     depends_on:
       - sampleapidocker.database
+    ports:
+      - "8080"
     links:
       - sampleapidocker.database
 

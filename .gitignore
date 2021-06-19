@@ -11,3 +11,6 @@
 /SampleApiDocker/SampleApiDocker.DataAccess/obj
 /SampleApiDocker/SampleApiDocker.Entities/obj
 /SampleApiDocker/SampleApiDocker/bin/Debug/netcoreapp3.1
+/SampleApiDocker/SampleApiDocker.Business/bin/Debug/netcoreapp3.1
+/SampleApiDocker/SampleApiDocker.DataAccess/bin/Debug/netcoreapp3.1
+/SampleApiDocker/SampleApiDocker.Entities/bin/Debug/netcoreapp3.1

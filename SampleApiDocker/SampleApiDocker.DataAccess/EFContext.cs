@@ -1,21 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using SampleApiDocker.Entities;
+using SampleApiDocker.DataAccess.Mapping;
 
 namespace SampleApiDocker.DataAccess
 {
     public sealed class EFContext : DbContext
     {
-        //public DbSet<InteractionEntitie> Interactions { get; set; }
+        public DbSet<EventEntitie> Events { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             RemoveConventions(modelBuilder);
 
-            //ADICIONAR OS MAPS PARA CRIAÇÃO DA BASE E DOS MIGRATIONS
-            //modelBuilder.ApplyConfiguration(new InteractionMap());
+            //Add Maps for DataBase Create and Migrations
+            modelBuilder.ApplyConfiguration(new EventMap());
 
 
             base.OnModelCreating(modelBuilder);
@@ -23,7 +22,7 @@ namespace SampleApiDocker.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(BlinkerConfiguration.GetDefaultConnectionString());
+            optionsBuilder.UseSqlServer("Server=sampleapidocker.database;Database=AppDbContext;User=sa;Password=sampleapidocker@123;");
         }
 
         private void RemoveConventions(ModelBuilder modelBuilder)

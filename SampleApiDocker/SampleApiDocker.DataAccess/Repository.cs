@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace SampleApiDocker.DataAccess
 {
@@ -15,6 +14,8 @@ namespace SampleApiDocker.DataAccess
         public Repository()
         {
             context = new EFContext();
+            context.Database.Migrate();
+
             dbSet = context.Set<T>();
         }
 

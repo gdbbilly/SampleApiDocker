@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SampleApiDocker.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SampleApiDocker.Controllers.EventController.Get(System.String)">
+            <summary>
+            Get Event
+            </summary>
+            <returns>Object of Event</returns>
+        </member>
+        <member name="M:SampleApiDocker.Controllers.EventController.GetAll">
+            <summary>
+            Get Event
+            </summary>
+            <returns>Object of Event</returns>
+        </member>
+        <member name="M:SampleApiDocker.Controllers.EventController.Create(SampleApiDocker.Entities.Model.EventModel)">
+            <summary>
+            Create Event
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SampleApiDocker.Controllers.EventController.Delete(System.String)">
+            <summary>
+            Create Event
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

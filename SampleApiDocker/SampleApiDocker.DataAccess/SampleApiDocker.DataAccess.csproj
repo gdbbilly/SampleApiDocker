@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SampleApiDocker.Entities\SampleApiDocker.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
