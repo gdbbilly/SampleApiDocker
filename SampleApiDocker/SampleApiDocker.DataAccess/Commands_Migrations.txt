@@ -1,0 +1,23 @@
+﻿https://www.entityframeworktutorial.net/efcore/entity-framework-core-migration.aspx
+
+para executar os comandos primeiro instalar o tool do ef
+dotnet tool install --global dotnet-ef --version 3.1.3
+
+Executar os comandos pelo Package Manager Console -> Apontar Default Project para o Blinker.DataAccess
+para criar migration -> dotnet ef migrations add NOME --context EFContext --project Blinker.DataAccess
+para atualizar a base -> dotnet ef database update --project Blinker.DataAccess
+para remover migration -> dotnet ef migrations remove
+voltar para migration X -> dotnet ef database update X.
+para gerar scripts dos migrations ->  dotnet ef migrations script
+
+
+Executar pelo cmg ou console 
+dotnet ef migrations add NOME
+
+lembrar de descomentar no OnConfiguring
+
+Commands:
+  add     Adds a new migration.
+  list    Lists available migrations.
+  remove  Removes the last migration.
+  script  Generates a SQL script from migrations.

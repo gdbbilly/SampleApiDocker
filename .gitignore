@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SampleApiDocker/.vs/SampleApiDocker/v16
+/SampleApiDocker/bin/Debug
+/SampleApiDocker/obj
+/SampleApiDocker/SampleApiDocker/obj
+/SampleApiDocker/SampleApiDocker.Business/obj
+/SampleApiDocker/SampleApiDocker.DataAccess/obj
+/SampleApiDocker/SampleApiDocker.Entities/obj
